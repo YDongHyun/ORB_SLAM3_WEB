@@ -4,6 +4,7 @@ const PORT =8080;
 
 const cors = require("cors");
 app.use(cors());
+app.use(express.static("views"));
 
 const multer = require("multer");
 const upload = multer({
